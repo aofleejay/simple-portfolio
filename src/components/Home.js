@@ -5,7 +5,9 @@ class Home extends Component {
     const greeting = 'Hello!!'
 
     return (
-      <h1>{ greeting }</h1>
+      <div>
+        <h1>{ greeting }</h1>
+      </div>
     )
   }
 }
