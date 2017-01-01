@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PortfolioCard from './PortfolioCard'
+import { Link } from 'react-router'
 
 class Pages extends Component {
   state = {
@@ -17,7 +18,8 @@ class Pages extends Component {
       <div>
         {
           this.state.portfolios.map((portfolio) => (
-            <div key={portfolio.id}>
+            <Link key={portfolio.id}
+                  to={{ pathname: `/pages/${portfolio.id}` }}>
               <PortfolioCard 
                 firstname={portfolio.firstname}
                 lastname={portfolio.lastname}
@@ -27,7 +29,7 @@ class Pages extends Component {
                 mainField={portfolio.mainField}
                 fields={portfolio.fields}
               />
-            </div>
+            </Link>
           ))
         }
       </div>
