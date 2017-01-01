@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Card, CardHeader, CardMedia, CardTitle} from 'material-ui/Card';
+import React, { Component } from 'react'
+import {Card, CardHeader, CardMedia, CardTitle} from 'material-ui/Card'
 
 class PortfolioCard extends Component {
   render () {
