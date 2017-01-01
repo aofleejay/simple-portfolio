@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/App'
-import Home from './components/Home'
-import Pages from './components/Pages'
-import Page from './components/Page'
-import injectTapEventPlugin from 'react-tap-event-plugin'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import App from './components/templates/App'
+import Home from './components/Home'
+import PortfoliosContainer from './containers/PortfoliosContainer'
+import PortfolioContainer from './containers/PortfolioContainer'
 import 'normalize.css'
 import './index.scss'
 
@@ -17,10 +17,10 @@ const Root = () => (
     <Router history={browserHistory}>
       <Route path='/' component={App}>
         <IndexRoute component={Home} />
-        <Route path='pages'>
-          <IndexRoute component={Pages} />
+        <Route path='portfolios'>
+          <IndexRoute component={PortfoliosContainer} />
           <Route path=':id'
-                 component={Page} />
+                 component={PortfolioContainer} />
         </Route>
       </Route>
     </Router>

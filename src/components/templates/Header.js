@@ -14,14 +14,14 @@ class Header extends Component {
             className='title' 
             to={{ pathname: '/' }}
           >
-            Portfolio
+            Stupid Portfolio
           </Link>
         }
         showMenuIconButton={false}
         iconElementRight={
           <FlatButton 
-            label="Pages" 
-            containerElement={<Link to="/pages"/>} 
+            label="Portfolios" 
+            containerElement={<Link to="/portfolios"/>} 
           />
         }
         zDepth={0}
