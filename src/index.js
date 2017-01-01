@@ -8,7 +8,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import 'normalize.css'
-import './index.css'
+import './index.scss'
 
 injectTapEventPlugin()
 
