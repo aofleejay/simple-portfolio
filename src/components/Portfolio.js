@@ -4,18 +4,19 @@ import './Portfolio.scss'
 
 class Portfolio extends Component {
   render () {
+    const { id, firstname, lastname, nickname, avatar, image, mainField, fields } = this.props.portfolio
     return (
       <article className="portfolios-container">
         <PortfolioCard 
-          key={this.props.portfolio.id}
-          id={this.props.portfolio.id}
-          firstname={this.props.portfolio.firstname}
-          lastname={this.props.portfolio.lastname}
-          nickname={this.props.portfolio.nickname}
-          avatar={this.props.portfolio.avatar}
-          image={this.props.portfolio.image}
-          mainField={this.props.portfolio.mainField}
-          fields={this.props.portfolio.fields}
+          key={id}
+          id={id}
+          firstname={firstname}
+          lastname={lastname}
+          nickname={nickname}
+          avatar={avatar}
+          image={image}
+          mainField={mainField}
+          fields={fields}
         />
       </article>
     )

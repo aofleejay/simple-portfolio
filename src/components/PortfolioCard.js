@@ -5,18 +5,19 @@ import './PortfolioCard.scss'
 
 class PortfolioCard extends Component {
   render () {
+    const { id, firstname, nickname, avatar, mainField, fields, image } = this.props
     return (
-      <Link to={{ pathname: `/portfolios/${this.props.id}` }}>
+      <Link to={{ pathname: `/portfolios/${id}` }}>
         <Card className="portfolio-card">
           <CardHeader
-            title={this.props.firstname}
-            subtitle={this.props.nickname}
-            avatar={this.props.avatar}
+            title={firstname}
+            subtitle={nickname}
+            avatar={avatar}
           />
           <CardMedia
-            overlay={<CardTitle title={this.props.mainField} subtitle={this.props.fields.join(', ')} />}
+            overlay={<CardTitle title={mainField} subtitle={fields.join(', ')} />}
           >
-            <img src={this.props.image} alt="profile" />
+            <img src={image} alt="profile" />
           </CardMedia>
         </Card>
       </Link>
