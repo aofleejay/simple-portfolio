@@ -4,13 +4,27 @@
       "id": 1,
       "firstname": "Kunapot",
       "lastname": "Pairat",
-      "nickname": "Aof"
+      "nickname": "Aof",
+      "avatar": "/images/profile-image-placeholder.jpg",
+      "image": "/images/portfolio-card-placeholder.jpg",
+      "mainField": "Programmer",
+      "fields": [
+        "Front-End Developer",
+        "Javascript Framework"
+      ]
     },
     {
       "id": 2,
       "firstname": "John",
       "lastname": "Doe",
-      "nickname": "John"
+      "nickname": "John",
+      "avatar": "/images/profile-image-placeholder.jpg",
+      "image": "/images/portfolio-card-placeholder.jpg",
+      "mainField": "Designer",
+      "fields": [
+        "Photoshop",
+        "Illustrator"
+      ]
     }
   ]
 }

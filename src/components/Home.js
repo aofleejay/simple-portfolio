@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PortfolioCard from './PortfolioCard'
 
 class Home extends Component {
   state = {
@@ -17,9 +18,15 @@ class Home extends Component {
         {
           this.state.portfolios.map((portfolio) => (
             <div key={portfolio.id}>
-              <span>{portfolio.firstname}</span>
-              <span>{portfolio.lastname}</span>
-              <span>{portfolio.nickname}</span>
+              <PortfolioCard 
+                firstname={portfolio.firstname}
+                lastname={portfolio.lastname}
+                nickname={portfolio.nickname}
+                avatar={portfolio.avatar}
+                image={portfolio.image}
+                mainField={portfolio.mainField}
+                fields={portfolio.fields}
+              />
             </div>
           ))
         }
