@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
+import './Home.scss'
 
 class Home extends Component {
   render () {
-    const greeting = 'Hello!!'
+    const title = 'Stupid Portfolio'
+    const subTitle = 'Stupid portfolio for stupid people.'
 
     return (
-      <div>
-        <h1>{ greeting }</h1>
+      <div className="home-jumbotron">
+        <h1 className='title'>{ title }</h1>
+        <h2 className='subtitle'>{ subTitle }</h2>
       </div>
     )
   }

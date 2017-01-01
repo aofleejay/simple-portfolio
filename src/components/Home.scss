@@ -1,0 +1,21 @@
+.home-jumbotron {
+  background-color: #00BCD4;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+
+  .image {
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  .title {
+    margin: 0.7em 0;
+  }
+
+  .subtitle {
+    margin: 0.5em 0;
+    font-weight: lighter;
+  }
+}

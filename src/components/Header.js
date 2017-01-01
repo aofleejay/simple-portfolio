@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import AppBar from 'material-ui/AppBar'
+import FlatButton from 'material-ui/FlatButton'
 import { Link } from 'react-router'
+import './Header.scss'
 
 class Header extends Component {
   render () {
     return (
       <AppBar
-        title={<Link to={{ pathname: '/' }}>Portfolio</Link>}
+        className='app-bar'
+        title={<Link className='title' to={{ pathname: '/' }}>Portfolio</Link>}
         showMenuIconButton={false}
-        iconElementRight={<Link to={{ pathname: '/pages' }}>Pages</Link>}
+        iconElementRight={<FlatButton label="Pages" containerElement={<Link to="/pages"/>} />}
+        zDepth={0}
       />
     )
   }
