@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Home from './Home'
 import Header from './Header'
 
 class App extends Component {
@@ -7,7 +6,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Home />
+        {this.props.children}
       </div>
     )
   }
