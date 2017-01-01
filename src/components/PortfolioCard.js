@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import {Card, CardHeader, CardMedia, CardTitle} from 'material-ui/Card'
+import './PortfolioCard.scss'
 
 class PortfolioCard extends Component {
   render () {
     return (
-      <Card>
+      <Card className="portfolio-card">
         <CardHeader
           title={this.props.firstname}
           subtitle={this.props.nickname}

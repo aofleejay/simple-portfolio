@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PortfolioCard from './PortfolioCard'
 import { Link } from 'react-router'
+import './Pages.scss'
 
 class Pages extends Component {
   state = {
@@ -15,7 +16,7 @@ class Pages extends Component {
 
   render () {
     return (
-      <div>
+      <div className="pages-container">
         {
           this.state.portfolios.map((portfolio) => (
             <Link key={portfolio.id}

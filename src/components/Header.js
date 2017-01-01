@@ -9,9 +9,21 @@ class Header extends Component {
     return (
       <AppBar
         className='app-bar'
-        title={<Link className='title' to={{ pathname: '/' }}>Portfolio</Link>}
+        title={
+          <Link 
+            className='title' 
+            to={{ pathname: '/' }}
+          >
+            Portfolio
+          </Link>
+        }
         showMenuIconButton={false}
-        iconElementRight={<FlatButton label="Pages" containerElement={<Link to="/pages"/>} />}
+        iconElementRight={
+          <FlatButton 
+            label="Pages" 
+            containerElement={<Link to="/pages"/>} 
+          />
+        }
         zDepth={0}
       />
     )

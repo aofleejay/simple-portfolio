@@ -1,7 +1,10 @@
 .app-bar {
-  .title,
-  .right {
+  .title {
     color: white;
     text-decoration: none;
+  }
+
+  .right {
+    font-weight: lighter;
   }
 }
