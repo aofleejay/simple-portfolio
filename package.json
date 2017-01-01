@@ -8,6 +8,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "json-server": "^0.9.4",
+    "npm-run-all": "^4.0.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
@@ -18,7 +19,9 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all --parallel client api",
+    "client": "react-scripts start",
+    "api": "json-server --watch api/db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
